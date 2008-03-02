@@ -2,7 +2,7 @@ Summary:	MBROLA - a speech synthesizer based on the concatenation of diphones
 Summary(pl.UTF-8):	MBROLA - syntezator mowy bazujący na łączeniu dwuzgłosek
 Name:		mbrola-voices
 Version:	301h
-Release:	4
+Release:	5
 License:	Non-commercial, non-military purposes, w/ and only w/ the voice and language databases available on http://tcts.fpms.ac.be/synthesis/
 Group:		Applications/Sound
 Source1:	http://tcts.fpms.ac.be/synthesis/mbrola/dba/us1/us1-980512.zip
@@ -606,7 +606,7 @@ mbrola i festival.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_datadir}/festival/lib/voices/{english/{us{1,2,3},en1}_mbrola/{us{1,2,3},en1},polish/pl1_mbrola/pl1}}
+install -d $RPM_BUILD_ROOT%{_datadir}/festival/lib/voices/{english/{us{1,2,3},en1}_mbrola/{us{1,2,3},en1},polish/pl1_mbrola/pl1}
 install -d $RPM_BUILD_ROOT%{_datadir}/festival/lib/voices/afrikaans/af1_mbrola/af1
 install -d $RPM_BUILD_ROOT%{_datadir}/festival/lib/voices/arabic/ar1_mbrola/ar1
 install -d $RPM_BUILD_ROOT%{_datadir}/festival/lib/voices/arabic/ar2_mbrola/ar2
@@ -925,5 +925,8 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
+Revision 1.2  2008-03-02 23:49:07  glen
+- fix install; rel 5
+
 Revision 1.1  2008-03-02 23:39:53  glen
 - separated data part from mbrola.spec
