@@ -1,3 +1,5 @@
+# TODO
+# - fix weird topdir: mbrola-voice-ee-301h-6.noarch marks festival-1.4.4-0.20030803.4.i686 (cap /usr/share/festival/lib/voices)
 Summary:	MBROLA - a speech synthesizer based on the concatenation of diphones
 Summary(pl.UTF-8):	MBROLA - syntezator mowy bazujący na łączeniu dwuzgłosek
 Name:		mbrola-voices
@@ -947,7 +949,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
-Revision 1.4  2009-05-06 22:24:02  glen
+Revision 1.5  2009-05-06 23:21:52  glen
+- why in festival subdirs?
+
+Revision 1.4  2009/05/06 22:24:02  glen
 - rename language packages using glibc codes (iso639-1)
 
 Revision 1.3  2008/03/13 21:16:36  glen
