@@ -617,15 +617,28 @@ Damski głos wenezuelskiej odmiany hiszpańskiego dla syntezatorów mowy
 mbrola i festival.
 
 %prep
-%setup -q -c -T -a1 -a2 -a3 -a4 -a6 -a7 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a18 -a19 -a20 -a22 -a23 -a24 -a25 -a26 -a28 -a29 -a30 -a31 -a32 -a33 -a35 -a36 -a38 -a39 -a40 -a41 -a43 -a44 -a45 -a46 -a47 -a48 -a49 -a50 -a51 -a52 -a53 -a54 -a55 -a56 -a57 -a58 -a59 -a60 -a61 -a62 -a63 -a64 -a65 -a66
-%{__unzip} -qq %{SOURCE5} -d pl1
-%{__unzip} -qq %{SOURCE8} -d ar2
-%{__unzip} -qq %{SOURCE17} -d cz2
-%{__unzip} -qq %{SOURCE21} -d nz1
-%{__unzip} -qq %{SOURCE27} -d fr4
-%{__unzip} -qq %{SOURCE34} -d de4
-%{__unzip} -qq %{SOURCE37} -d de7
-%{__unzip} -qq %{SOURCE42} -d id1
+# do some magic by checking if zip has subdir and then override __unzip macro
+unpack() {
+	local args="$1"
+	local file="$2"
+	local c
+
+	mkdir -p tmp
+	%{__unzip} $args -d tmp $file
+	c=$(ls tmp)
+	if [ $(echo "$c" | wc -w) = 1 ]; then
+		# had subdir, that's nice
+		mv tmp/* .
+		rmdir tmp
+	else
+		# did not had subdir, make up something
+		c=$(basename $file .zip) c=${c%%-*}
+		mv tmp $c
+	fi
+	echo "Unpacked as $c"
+}
+%define	__unzip unpack
+%setup -qcT %(seq -f '-a %g' 1 66 | xargs)
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -949,7 +962,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
-Revision 1.5  2009-05-06 23:21:52  glen
+Revision 1.6  2009-05-06 23:42:18  glen
+- simplify unpacking
+
+Revision 1.5  2009/05/06 23:21:52  glen
 - why in festival subdirs?
 
 Revision 1.4  2009/05/06 22:24:02  glen
