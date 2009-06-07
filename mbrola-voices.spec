@@ -644,11 +644,6 @@ unpack() {
 %setup -qcT %(seq -f '-a %g' 1 66 | xargs)
 
 cat > map <<'EOF'
-us1 english
-us2 english
-us3 english
-en1 english
-pl1 polish
 af1 afrikaans
 ar1 arabic
 ar2 arabic
@@ -661,18 +656,6 @@ ca2 canadian_french
 cr1 croation
 cz1 czech
 cz2 czech
-nl1 dutch
-nl2 dutch
-nl3 dutch
-ee1 estonian
-pt1 european_portuguese
-fr1 french
-fr2 french
-fr3 french
-fr4 french
-fr5 french
-fr6 french
-fr7 french
 de1 german
 de2 german
 de3 german
@@ -680,9 +663,22 @@ de4 german
 de5 german
 de6 german
 de7 german
+ee1 estonian
+en1 english
+es1 spanish
+es2 spanish
+es4 spanish
+fr1 french
+fr2 french
+fr3 french
+fr4 french
+fr5 french
+fr6 french
+fr7 french
 gr1 greek
 gr2 greek
 hb1 hebrew
+hn1 korean
 ic1 icelandic
 id1 indonesian
 in1 hindi
@@ -692,26 +688,32 @@ it1 italian
 it2 italian
 it3 italian
 it4 italian
-hn1 korean
 jp1 japanese
 jp2 japanese
 jp3 japanese
 lt1 lithuanian
 lt2 lithuanian
-es1 spanish
-es2 spanish
-es4 spanish
 mx1 spanish_mexican
+nl1 dutch
+nl2 dutch
+nl3 dutch
+nz1 maori
+pl1 polish
+pt1 european_portuguese
 ro1 romanian
 sw1 swedish
 sw2 swedish
 tl1 telugu
 tr1 turkish
 tr2 turkish
+us1 english
+us2 english
+us3 english
 vz1 venezuelan_spanish
 EOF
 
 rm -f br1/br1sampa.set
+mv nz1/{ma1r2,nz1}
 
 # rename for easier packaging
 while read code lang; do
@@ -723,12 +725,6 @@ while read code lang; do
 	install -d docs
 	mv $code docs
 done < map
-
-# special one. didn't match one with maps rule
-# TODO: is the filenames really so important?
-install -d voices/maori/nz1_mbrola/ma1r2
-mv nz1/ma1r2 voices/maori/nz1_mbrola/ma1r2
-mv nz1 docs
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -912,7 +908,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
-Revision 1.7  2009-06-07 13:55:49  glen
+Revision 1.8  2009-06-07 15:01:12  glen
+- package nz1/ma1r2 as nz1, hopefully it works
+
+Revision 1.7  2009/06/07 13:55:49  glen
 - automatize the packaging for easier updating
 
 Revision 1.6  2009/05/06 23:42:18  glen
