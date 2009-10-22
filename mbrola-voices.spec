@@ -643,79 +643,79 @@ unpack() {
 %setup -qcT %(seq -f '-a %g' 1 66 | xargs)
 
 cat > map <<'EOF'
-af1 afrikaans
-ar1 arabic
-ar2 arabic
-br1 brazilian_portuguese
-br2 brazilian_portuguese
-br3 brazilian_portuguese
-bz1 breton/bz1_mbrola
-ca1 canadian_french
-ca2 canadian_french
-cr1 croation
-cz1 czech
-cz2 czech
-de1 german
-de2 german
-de3 german
-de4 german
-de5 german
-de6 german
-de7 german
-ee1 estonian
-en1 english
-es1 spanish
-es2 spanish
-es4 spanish
-fr1 french
-fr2 french
-fr3 french
-fr4 french
-fr5 french
-fr6 french
-fr7 french
-gr1 greek
-gr2 greek
-hb1 hebrew
-hn1 korean
-ic1 icelandic
-id1 indonesian
-in1 hindi
-in2 hindi
-ir1 farsi
-it1 italian
-it2 italian
-it3 italian
-it4 italian
-jp1 japanese
-jp2 japanese
-jp3 japanese
-lt1 lithuanian
-lt2 lithuanian
-mx1 spanish_mexican
-nl1 dutch
-nl2 dutch
-nl3 dutch
-nz1 maori
-pl1 polish
-pt1 european_portuguese
-ro1 romanian
-sw1 swedish
-sw2 swedish
-tl1 telugu
-tr1 turkish
-tr2 turkish
-us1 english
-us2 english
-us3 english
-vz1 venezuelan_spanish
+af1 afrikaans Afrikaans Male
+ar1 arabic Arabic Male
+ar2 arabic Arabic Male
+br1 brazilian_portuguese Brazilian Portuguese Male
+br2 brazilian_portuguese Brazilian Portuguese Male
+br3 brazilian_portuguese Brazilian Portuguese Male
+bz1 breton/bz1_mbrola Breton Female
+ca1 canadian_french Canadian French Male
+ca2 canadian_french Canadian French Male
+cr1 croation Croation Male
+cz1 czech Czech Female
+cz2 czech Czech Male
+de1 german German Female
+de2 german German Male
+de3 german German Female
+de4 german German Male
+de5 german German Female
+de6 german German Male
+de7 german German Female
+ee1 estonian Estonian Male
+en1 english British English Male
+es1 spanish Spanish Male
+es2 spanish Spanish Male
+es4 spanish Spanish Male
+fr1 french French Male
+fr2 french French Female
+fr3 french French Male
+fr4 french French Female
+fr5 french French Belgian
+fr6 french French Male
+fr7 french French Belgian
+gr1 greek Greek Male
+gr2 greek Greek Male
+hb1 hebrew Hebrew Male
+hn1 korean Korean Male
+ic1 icelandic Icelandic Male
+id1 indonesian Indonesian Male
+in1 hindi Hindi Male
+in2 hindi Hindi Female
+ir1 farsi Iranian Male
+it1 italian Italian Male
+it2 italian Italian Female
+it3 italian Italian Male
+it4 italian Italian Female
+jp1 japanese Japanese Male
+jp2 japanese Japanese Female
+jp3 japanese Japanese Female
+lt1 lithuanian Lithuanian Male
+lt2 lithuanian Lithuanian Male
+mx1 spanish_mexican Spanish Mexican Male
+nl1 dutch Small Dutch Male
+nl2 dutch Dutch Male
+nl3 dutch Dutch Female
+nz1 maori Breton Female
+pl1 polish Polish Female
+pt1 european_portuguese European Portuguese Female
+ro1 romanian Romanian Male
+sw1 swedish Swedish Male
+sw2 swedish Swedish Female
+tl1 telugu Telugu Female
+tr1 turkish Turkish Mal
+tr2 turkish Turkish Female
+us1 english American English Female
+us2 english American English Male
+us3 english American English Male
+vz1 venezuelan_spanish Venezuelan Spanish
 EOF
 
 rm -f br1/br1sampa.set
 mv nz1/{ma1r2,nz1}
 
 # rename for easier packaging
-while read code lang; do
+while read code lang desc; do
 	install -d voices/$lang/${code}_mbrola/$code
 	mv $code/$code voices/$lang/${code}_mbrola/$code
 	if [ -f "$code/${code}mrpa" ]; then
@@ -907,7 +907,10 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
-Revision 1.10  2009-10-22 20:13:37  glen
+Revision 1.11  2009-10-22 20:32:29  glen
+- voice desc for languages
+
+Revision 1.10  2009/10/22 20:13:37  glen
 - sorted sources
 
 Revision 1.9  2009/10/22 19:31:12  glen
