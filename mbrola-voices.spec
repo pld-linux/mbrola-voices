@@ -196,22 +196,6 @@ Arabic male voices for the mbrola and festival speech synthesizers.
 %description -n mbrola-voice-ar -l pl.UTF-8
 Męski arabski głos dla syntezatorów mowy mbrola i festival.
 
-%package -n mbrola-voice-pt_BR
-Summary:	Files for Brazilian Portuguese voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos brazylijskiej odmiany portugalskiego dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-# can't obsolete: such pkg exists
-#Obsoletes:	mbrola-voice-br
-
-%description -n mbrola-voice-pt_BR
-Brazilian Portuguese male voices for the mbrola and festival speech
-synthesizers.
-
-%description -n mbrola-voice-pt_BR -l pl.UTF-8
-Męski głos brazylijskiej odmiany portugalskiego dla syntezatorów mowy
-mbrola i festival.
-
 %package -n mbrola-voice-br
 Summary:	Files for Breton voice to be used the w/ mbrola and festival speech synthesizers
 Summary(pl.UTF-8):	Głos bretoński dla syntezatorów mowy mbrola i festival
@@ -224,34 +208,6 @@ Breton female voices for the mbrola and festival speech synthesizers.
 
 %description -n mbrola-voice-br -l pl.UTF-8
 Damski głos bretoński dla syntezatorów mowy mbrola i festival.
-
-%package -n mbrola-voice-fr_CA
-Summary:	Files for Canadian French voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos kanadyjskiej odmiany francuskiego dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-ca
-
-%description -n mbrola-voice-fr_CA
-Canadian French male voices for the mbrola and festival speech
-synthesizers.
-
-%description -n mbrola-voice-fr_CA -l pl.UTF-8
-Męski głos kanadyjskiej odmiany francuskiego dla syntezatorów mowy
-mbrola i festival.
-
-%package -n mbrola-voice-hr
-Summary:	Files for Croation voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos chorwacki dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-cr
-
-%description -n mbrola-voice-hr
-Croation male voices for the mbrola and festival speech synthesizers.
-
-%description -n mbrola-voice-hr -l pl.UTF-8
-Męski głos chorwacki dla syntezatorów mowy mbrola i festival.
 
 %package -n mbrola-voice-cs
 Summary:	Files for Czech voice to be used the w/ mbrola and festival speech synthesizers
@@ -280,18 +236,18 @@ synthesizers.
 %description -n mbrola-voice-de -l pl.UTF-8
 Damski i męski głos niemiecki dla syntezatorów mowy mbrola i festival.
 
-%package -n mbrola-voice-et
-Summary:	Files for Estonian voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos estoński dla syntezatorów mowy mbrola i festival
+%package -n mbrola-voice-el
+Summary:	Files for Greek voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos grecki dla syntezatorów mowy mbrola i festival
 Group:		Applications/Sound
 Requires:	mbrola
-Obsoletes:	mbrola-voice-ee
+Obsoletes:	mbrola-voice-gr
 
-%description -n mbrola-voice-et
-Estonian male voices for the mbrola and festival speech synthesizers.
+%description -n mbrola-voice-el
+Greek male voices for the mbrola and festival speech synthesizers.
 
-%description -n mbrola-voice-et -l pl.UTF-8
-Męski głos estoński dla syntezatorów mowy mbrola i festival.
+%description -n mbrola-voice-el -l pl.UTF-8
+Męski głos grecki dla syntezatorów mowy mbrola i festival.
 
 %package -n mbrola-voice-en_GB
 Summary:	Files for voice English to be used with the mbrola and festival speech synthesizers
@@ -307,6 +263,24 @@ British male voices for the mbrola and festival speech synthesizers.
 %description -n mbrola-voice-en_GB -l pl.UTF-8
 Brytyjski głos męski dla syntezatorów mowy mbrola i festival.
 
+%package -n mbrola-voice-en_US
+Summary:	Files for us voices to be used with the mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Pliki do głosów us dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-us
+Obsoletes:	mbrola-voice-us1
+Obsoletes:	mbrola-voice-us2
+Obsoletes:	mbrola-voice-us3
+
+%description -n mbrola-voice-en_US
+American voices (two male and a female) for the mbrola and festival
+speech synthesizers.
+
+%description -n mbrola-voice-en_US -l pl.UTF-8
+Głosy amerykańskie (dwa męskie i damski) dla syntezatorów mowy mbrola
+i festival.
+
 %package -n mbrola-voice-es
 Summary:	Files for Spanish voice to be used the w/ mbrola and festival speech synthesizers
 Summary(pl.UTF-8):	Głos hiszpański dla syntezatorów mowy mbrola i festival
@@ -319,6 +293,61 @@ Spanish male voices for the mbrola and festival speech synthesizers.
 %description -n mbrola-voice-es -l pl.UTF-8
 Męski głos hiszpański dla syntezatorów mowy mbrola i festival.
 
+%package -n mbrola-voice-es_MX
+Summary:	Files for Spanish Mexican voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos meksykańskiej odmiany hiszpańskiego dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-mx
+
+%description -n mbrola-voice-es_MX
+Spanish Mexican male voices for the mbrola and festival speech
+synthesizers.
+
+%description -n mbrola-voice-es_MX -l pl.UTF-8
+Męski głos meksykańskiej odmiany hiszpańskiego dla syntezatorów mowy
+mbrola i festival.
+
+%package -n mbrola-voice-es_VE
+Summary:	Files for Venezuelan Spanish voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos wenezuelskiej odmiany hiszpańskiego dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-vz
+
+%description -n mbrola-voice-es_VE
+Venezuelan Spanish female voices for the mbrola and festival speech
+synthesizers.
+
+%description -n mbrola-voice-es_VE -l pl.UTF-8
+Damski głos wenezuelskiej odmiany hiszpańskiego dla syntezatorów mowy
+mbrola i festival.
+
+%package -n mbrola-voice-et
+Summary:	Files for Estonian voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos estoński dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-ee
+
+%description -n mbrola-voice-et
+Estonian male voices for the mbrola and festival speech synthesizers.
+
+%description -n mbrola-voice-et -l pl.UTF-8
+Męski głos estoński dla syntezatorów mowy mbrola i festival.
+
+%package -n mbrola-voice-fa
+Summary:	Files for Farsi voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos irański dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-ir
+
+%description -n mbrola-voice-fa
+Farsi male voices for the mbrola and festival speech synthesizers.
+
+%description -n mbrola-voice-fa -l pl.UTF-8
+Męski głos irański dla syntezatorów mowy mbrola i festival.
 %package -n mbrola-voice-fr
 Summary:	Files for French voice to be used the w/ mbrola and festival speech synthesizers
 Summary(pl.UTF-8):	Głos francuski dla syntezatorów mowy mbrola i festival
@@ -332,18 +361,20 @@ synthesizers.
 %description -n mbrola-voice-fr -l pl.UTF-8
 Damski i męski głos francuski dla syntezatorów mowy mbrola i festival.
 
-%package -n mbrola-voice-el
-Summary:	Files for Greek voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos grecki dla syntezatorów mowy mbrola i festival
+%package -n mbrola-voice-fr_CA
+Summary:	Files for Canadian French voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos kanadyjskiej odmiany francuskiego dla syntezatorów mowy mbrola i festival
 Group:		Applications/Sound
 Requires:	mbrola
-Obsoletes:	mbrola-voice-gr
+Obsoletes:	mbrola-voice-ca
 
-%description -n mbrola-voice-el
-Greek male voices for the mbrola and festival speech synthesizers.
+%description -n mbrola-voice-fr_CA
+Canadian French male voices for the mbrola and festival speech
+synthesizers.
 
-%description -n mbrola-voice-el -l pl.UTF-8
-Męski głos grecki dla syntezatorów mowy mbrola i festival.
+%description -n mbrola-voice-fr_CA -l pl.UTF-8
+Męski głos kanadyjskiej odmiany francuskiego dla syntezatorów mowy
+mbrola i festival.
 
 %package -n mbrola-voice-he
 Summary:	Files for Hebrew voice to be used the w/ mbrola and festival speech synthesizers
@@ -357,46 +388,6 @@ Hebrew male voices for the mbrola and festival speech synthesizers.
 
 %description -n mbrola-voice-he -l pl.UTF-8
 Męski głos hebrajski dla syntezatorów mowy mbrola i festival.
-
-%package -n mbrola-voice-ko
-Summary:	Files for Korean voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos koreański dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-hn
-
-%description -n mbrola-voice-ko
-Korean male and female voices for the mbrola and festival speech
-synthesizers.
-
-%description -n mbrola-voice-ko -l pl.UTF-8
-Damski i męski głos koreański dla syntezatorów mowy mbrola i festival.
-
-%package -n mbrola-voice-is
-Summary:	Files for Icelandic voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos islandzki dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-ic
-
-%description -n mbrola-voice-is
-Icelandic male voices for the mbrola and festival speech synthesizers.
-
-%description -n mbrola-voice-is -l pl.UTF-8
-Męski głos islandzki dla syntezatorów mowy mbrola i festival.
-
-%package -n mbrola-voice-id
-Summary:	Files for Indonesian voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos indonezyjski dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-
-%description -n mbrola-voice-id
-Indonesian male voices for the mbrola and festival speech
-synthesizers.
-
-%description -n mbrola-voice-id -l pl.UTF-8
-Męski głos indonezyjski dla syntezatorów mowy mbrola i festival.
 
 %package -n mbrola-voice-hi
 Summary:	Files for Hindi voice to be used the w/ mbrola and festival speech synthesizers
@@ -412,18 +403,44 @@ synthesizers.
 %description -n mbrola-voice-hi -l pl.UTF-8
 Damski i męski głos hindi dla syntezatorów mowy mbrola i festival.
 
-%package -n mbrola-voice-fa
-Summary:	Files for Farsi voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos irański dla syntezatorów mowy mbrola i festival
+%package -n mbrola-voice-hr
+Summary:	Files for Croation voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos chorwacki dla syntezatorów mowy mbrola i festival
 Group:		Applications/Sound
 Requires:	mbrola
-Obsoletes:	mbrola-voice-ir
+Obsoletes:	mbrola-voice-cr
 
-%description -n mbrola-voice-fa
-Farsi male voices for the mbrola and festival speech synthesizers.
+%description -n mbrola-voice-hr
+Croation male voices for the mbrola and festival speech synthesizers.
 
-%description -n mbrola-voice-fa -l pl.UTF-8
-Męski głos irański dla syntezatorów mowy mbrola i festival.
+%description -n mbrola-voice-hr -l pl.UTF-8
+Męski głos chorwacki dla syntezatorów mowy mbrola i festival.
+
+%package -n mbrola-voice-id
+Summary:	Files for Indonesian voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos indonezyjski dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+
+%description -n mbrola-voice-id
+Indonesian male voices for the mbrola and festival speech
+synthesizers.
+
+%description -n mbrola-voice-id -l pl.UTF-8
+Męski głos indonezyjski dla syntezatorów mowy mbrola i festival.
+
+%package -n mbrola-voice-is
+Summary:	Files for Icelandic voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos islandzki dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-ic
+
+%description -n mbrola-voice-is
+Icelandic male voices for the mbrola and festival speech synthesizers.
+
+%description -n mbrola-voice-is -l pl.UTF-8
+Męski głos islandzki dla syntezatorów mowy mbrola i festival.
 
 %package -n mbrola-voice-it
 Summary:	Files for Italian voice to be used the w/ mbrola and festival speech synthesizers
@@ -452,6 +469,20 @@ synthesizers.
 %description -n mbrola-voice-ja -l pl.UTF-8
 Damski i męski głos japoński dla syntezatorów mowy mbrola i festival.
 
+%package -n mbrola-voice-ko
+Summary:	Files for Korean voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos koreański dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+Obsoletes:	mbrola-voice-hn
+
+%description -n mbrola-voice-ko
+Korean male and female voices for the mbrola and festival speech
+synthesizers.
+
+%description -n mbrola-voice-ko -l pl.UTF-8
+Damski i męski głos koreański dla syntezatorów mowy mbrola i festival.
+
 %package -n mbrola-voice-lt
 Summary:	Files for Lithuanian voice to be used the w/ mbrola and festival speech synthesizers
 Summary(pl.UTF-8):	Głos litewski dla syntezatorów mowy mbrola i festival
@@ -465,20 +496,18 @@ synthesizers.
 %description -n mbrola-voice-lt -l pl.UTF-8
 Damski i męski głos litewski dla syntezatorów mowy mbrola i festival.
 
-%package -n mbrola-voice-es_MX
-Summary:	Files for Spanish Mexican voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos meksykańskiej odmiany hiszpańskiego dla syntezatorów mowy mbrola i festival
+%package -n mbrola-voice-mi
+Summary:	Files for Maori voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos maoryjski dla syntezatorów mowy mbrola i festival
 Group:		Applications/Sound
 Requires:	mbrola
-Obsoletes:	mbrola-voice-mx
+Obsoletes:	mbrola-voice-nz
 
-%description -n mbrola-voice-es_MX
-Spanish Mexican male voices for the mbrola and festival speech
-synthesizers.
+%description -n mbrola-voice-mi
+Maori male voices for the mbrola and festival speech synthesizers.
 
-%description -n mbrola-voice-es_MX -l pl.UTF-8
-Męski głos meksykańskiej odmiany hiszpańskiego dla syntezatorów mowy
-mbrola i festival.
+%description -n mbrola-voice-mi -l pl.UTF-8
+Męski głos maoryjski dla syntezatorów mowy mbrola i festival.
 
 %package -n mbrola-voice-nl
 Summary:	Files for Dutch voice to be used the w/ mbrola and festival speech synthesizers
@@ -493,19 +522,6 @@ synthesizers.
 %description -n mbrola-voice-nl -l pl.UTF-8
 Damski i męski głos holenderski dla syntezatorów mowy mbrola i
 festival.
-
-%package -n mbrola-voice-mi
-Summary:	Files for Maori voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos maoryjski dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-nz
-
-%description -n mbrola-voice-mi
-Maori male voices for the mbrola and festival speech synthesizers.
-
-%description -n mbrola-voice-mi -l pl.UTF-8
-Męski głos maoryjski dla syntezatorów mowy mbrola i festival.
 
 %package -n mbrola-voice-pl
 Summary:	Files for Polish voice to be used with the mbrola and festival speech synthesizers
@@ -532,6 +548,22 @@ synthesizers.
 
 %description -n mbrola-voice-pt -l pl.UTF-8
 Męski głos europejskiej odmiany portugalskiego dla syntezatorów mowy
+mbrola i festival.
+
+%package -n mbrola-voice-pt_BR
+Summary:	Files for Brazilian Portuguese voice to be used the w/ mbrola and festival speech synthesizers
+Summary(pl.UTF-8):	Głos brazylijskiej odmiany portugalskiego dla syntezatorów mowy mbrola i festival
+Group:		Applications/Sound
+Requires:	mbrola
+# can't obsolete: such pkg exists
+#Obsoletes:	mbrola-voice-br
+
+%description -n mbrola-voice-pt_BR
+Brazilian Portuguese male voices for the mbrola and festival speech
+synthesizers.
+
+%description -n mbrola-voice-pt_BR -l pl.UTF-8
+Męski głos brazylijskiej odmiany portugalskiego dla syntezatorów mowy
 mbrola i festival.
 
 %package -n mbrola-voice-ro
@@ -585,39 +617,6 @@ synthesizers.
 
 %description -n mbrola-voice-tr -l pl.UTF-8
 Damski i męski głos turecki dla syntezatorów mowy mbrola i festival.
-
-%package -n mbrola-voice-en_US
-Summary:	Files for us voices to be used with the mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Pliki do głosów us dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-us
-Obsoletes:	mbrola-voice-us1
-Obsoletes:	mbrola-voice-us2
-Obsoletes:	mbrola-voice-us3
-
-%description -n mbrola-voice-en_US
-American voices (two male and a female) for the mbrola and festival
-speech synthesizers.
-
-%description -n mbrola-voice-en_US -l pl.UTF-8
-Głosy amerykańskie (dwa męskie i damski) dla syntezatorów mowy mbrola
-i festival.
-
-%package -n mbrola-voice-es_VE
-Summary:	Files for Venezuelan Spanish voice to be used the w/ mbrola and festival speech synthesizers
-Summary(pl.UTF-8):	Głos wenezuelskiej odmiany hiszpańskiego dla syntezatorów mowy mbrola i festival
-Group:		Applications/Sound
-Requires:	mbrola
-Obsoletes:	mbrola-voice-vz
-
-%description -n mbrola-voice-es_VE
-Venezuelan Spanish female voices for the mbrola and festival speech
-synthesizers.
-
-%description -n mbrola-voice-es_VE -l pl.UTF-8
-Damski głos wenezuelskiej odmiany hiszpańskiego dla syntezatorów mowy
-mbrola i festival.
 
 %prep
 # do some magic by checking if zip has subdir and then override __unzip macro
@@ -744,25 +743,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/ar*
 %{voicedir}/arabic
 
-%files -n mbrola-voice-pt_BR
-%defattr(644,root,root,755)
-%doc docs/br*
-%{voicedir}/brazilian_portuguese
-
 %files -n mbrola-voice-br
 %defattr(644,root,root,755)
 %doc docs/bz*/*
 %{voicedir}/breton
-
-%files -n mbrola-voice-fr_CA
-%defattr(644,root,root,755)
-%doc docs/ca*
-%{voicedir}/canadian_french
-
-%files -n mbrola-voice-hr
-%defattr(644,root,root,755)
-%doc docs/cr*/*
-%{voicedir}/croation
 
 %files -n mbrola-voice-cs
 %defattr(644,root,root,755)
@@ -774,10 +758,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/de*
 %{voicedir}/german
 
-%files -n mbrola-voice-et
+%files -n mbrola-voice-el
 %defattr(644,root,root,755)
-%doc docs/ee*/*
-%{voicedir}/estonian
+%doc docs/gr*
+%{voicedir}/greek
 
 %files -n mbrola-voice-en_GB
 %defattr(644,root,root,755)
@@ -785,50 +769,72 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{voicedir}/english/en1_mbrola
 %{voicedir}/english/en1_mbrola/en1
 
+%files -n mbrola-voice-en_US
+%defattr(644,root,root,755)
+%doc docs/us*
+%{voicedir}/english/us1_mbrola
+%{voicedir}/english/us2_mbrola
+%{voicedir}/english/us3_mbrola
+
 %files -n mbrola-voice-es
 %defattr(644,root,root,755)
 %doc docs/es*
 %{voicedir}/spanish
+
+%files -n mbrola-voice-es_MX
+%defattr(644,root,root,755)
+%doc docs/mx*/*
+%{voicedir}/spanish_mexican
+
+%files -n mbrola-voice-es_VE
+%defattr(644,root,root,755)
+%doc docs/vz*/*
+%{voicedir}/venezuelan_spanish
+
+%files -n mbrola-voice-et
+%defattr(644,root,root,755)
+%doc docs/ee*/*
+%{voicedir}/estonian
+
+%files -n mbrola-voice-fa
+%defattr(644,root,root,755)
+%doc docs/ir*/*
+%{voicedir}/farsi
 
 %files -n mbrola-voice-fr
 %defattr(644,root,root,755)
 %doc docs/fr*
 %{voicedir}/french
 
-%files -n mbrola-voice-el
+%files -n mbrola-voice-fr_CA
 %defattr(644,root,root,755)
-%doc docs/gr*
-%{voicedir}/greek
+%doc docs/ca*
+%{voicedir}/canadian_french
 
 %files -n mbrola-voice-he
 %defattr(644,root,root,755)
 %doc docs/hb*/*
 %{voicedir}/hebrew
 
-%files -n mbrola-voice-ko
+%files -n mbrola-voice-hi
 %defattr(644,root,root,755)
-%doc docs/hn*/*
-%{voicedir}/korean
+%doc docs/in*
+%{voicedir}/hindi
 
-%files -n mbrola-voice-is
+%files -n mbrola-voice-hr
 %defattr(644,root,root,755)
-%doc docs/ic*/*
-%{voicedir}/icelandic
+%doc docs/cr*/*
+%{voicedir}/croation
 
 %files -n mbrola-voice-id
 %defattr(644,root,root,755)
 %doc docs/id*/*
 %{voicedir}/indonesian
 
-%files -n mbrola-voice-hi
+%files -n mbrola-voice-is
 %defattr(644,root,root,755)
-%doc docs/in*
-%{voicedir}/hindi
-
-%files -n mbrola-voice-fa
-%defattr(644,root,root,755)
-%doc docs/ir*/*
-%{voicedir}/farsi
+%doc docs/ic*/*
+%{voicedir}/icelandic
 
 %files -n mbrola-voice-it
 %defattr(644,root,root,755)
@@ -840,25 +846,20 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/jp*
 %{voicedir}/japanese
 
+%files -n mbrola-voice-ko
+%defattr(644,root,root,755)
+%doc docs/hn*/*
+%{voicedir}/korean
+
 %files -n mbrola-voice-lt
 %defattr(644,root,root,755)
 %doc docs/lt*
 %{voicedir}/lithuanian
 
-%files -n mbrola-voice-es_MX
-%defattr(644,root,root,755)
-%doc docs/mx*/*
-%{voicedir}/spanish_mexican
-
 %files -n mbrola-voice-nl
 %defattr(644,root,root,755)
 %doc docs/nl*
 %{voicedir}/dutch
-
-%files -n mbrola-voice-mi
-%defattr(644,root,root,755)
-%doc docs/nz*/*
-%{voicedir}/maori
 
 %files -n mbrola-voice-pl
 %defattr(644,root,root,755)
@@ -870,6 +871,11 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/pt*/*
 %{voicedir}/european_portuguese
 
+%files -n mbrola-voice-pt_BR
+%defattr(644,root,root,755)
+%doc docs/br*
+%{voicedir}/brazilian_portuguese
+
 %files -n mbrola-voice-ro
 %defattr(644,root,root,755)
 %doc docs/ro*/*
@@ -879,6 +885,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc docs/sw*
 %{voicedir}/swedish
+
+%files -n mbrola-voice-mi
+%defattr(644,root,root,755)
+%doc docs/nz*/*
+%{voicedir}/maori
 
 %files -n mbrola-voice-te
 %defattr(644,root,root,755)
@@ -890,25 +901,16 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/tr*
 %{voicedir}/turkish
 
-%files -n mbrola-voice-en_US
-%defattr(644,root,root,755)
-%doc docs/us*
-%{voicedir}/english/us1_mbrola
-%{voicedir}/english/us2_mbrola
-%{voicedir}/english/us3_mbrola
-
-%files -n mbrola-voice-es_VE
-%defattr(644,root,root,755)
-%doc docs/vz*/*
-%{voicedir}/venezuelan_spanish
-
 %define date	%(LC_ALL="C" date +"%a %b %d %Y")
 %changelog
 * %{date}  PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
-Revision 1.8  2009-06-07 15:01:12  glen
+Revision 1.9  2009-10-22 19:31:12  glen
+- sorting
+
+Revision 1.8  2009/06/07 15:01:12  glen
 - package nz1/ma1r2 as nz1, hopefully it works
 
 Revision 1.7  2009/06/07 13:55:49  glen
