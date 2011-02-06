@@ -968,11 +968,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %define date	%(LC_ALL="C" date +"%a %b %d %Y")
 %changelog
-* %{date}  PLD Team <feedback@pld-linux.org>
+* %{date} PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
 $Log: mbrola-voices.spec,v $
-Revision 1.12  2009-10-27 13:04:49  glen
+Revision 1.13  2011-02-06 23:18:04  sparky
+- unified preamble in %changelog
+
+Revision 1.12  2009/10/27 13:04:49  glen
 - new voices: de8, hb2, hu1, la1, ma1, mx2; rel 7
 
 Revision 1.11  2009/10/22 20:32:29  glen
