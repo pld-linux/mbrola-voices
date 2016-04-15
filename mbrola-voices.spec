@@ -13,7 +13,7 @@ Version:	301h
 Release:	7
 License:	Non-commercial, non-military purposes, w/ and only w/ the voice and language databases available on http://tcts.fpms.ac.be/synthesis/
 Group:		Applications/Sound
-URL:		http://tcts.fpms.ac.be/synthesis/mbrola.html
+# Index for downloads: http://tcts.fpms.ac.be/synthesis/mbrola/mbrcopybin.html
 Source1:	http://tcts.fpms.ac.be/synthesis/mbrola/dba/af1/af1.zip
 # Source1-md5:	1391c7745585f12f423e0d9bb04fcc5a
 Source2:	http://tcts.fpms.ac.be/synthesis/mbrola/dba/ar1/ar1-981103.zip
@@ -158,6 +158,7 @@ Source71:	http://tcts.fpms.ac.be/synthesis/mbrola/dba/us3/us3-990208.zip
 # Source71-md5:	544840204a6e120cef67176769629ecb
 Source72:	http://tcts.fpms.ac.be/synthesis/mbrola/dba/vz1/vz1.zip
 # Source72-md5:	9fe85b878516254d9157bc8c47a0f08b
+URL:		http://tcts.fpms.ac.be/synthesis/mbrola.html
 BuildRequires:	unzip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -778,7 +779,14 @@ done < map
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{voicedir}
-cp -a voices/* $RPM_BUILD_ROOT%{voicedir}
+
+# test if we can hardlink -- %{_builddir} and $RPM_BUILD_ROOT on same partition
+if cp -al map $RPM_BUILD_ROOT/test 2>/dev/null; then
+	l=l
+	rm -f $RPM_BUILD_ROOT/test
+fi
+
+cp -a$l voices/* $RPM_BUILD_ROOT%{voicedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
